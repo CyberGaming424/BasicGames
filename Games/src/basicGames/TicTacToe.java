@@ -9,7 +9,9 @@ import java.util.Scanner;
 // Has no main function; can not run by it's self please refer to mainProgram in mainPackage to run the program.
 
 public class TicTacToe {
+	// Creates a scanner named sc to take input from a user
 	Scanner sc = new Scanner(System.in);
+	// A boolean to check if the game has reset or not
 	boolean newGame;
 	boolean turnOver;
 	String row1;
@@ -59,8 +61,7 @@ public class TicTacToe {
 			String answer = sc.nextLine();
 			if (answer.equalsIgnoreCase("Y")) {
 				gameOver = true;
-			}
-			else if (answer.equalsIgnoreCase("N")) {
+			} else if (answer.equalsIgnoreCase("N")) {
 				board = "\n" + "1. " + row1 + "\n" + "2. " + row2 + "\n" + "3. " + row3 + "\n";
 				System.out.println(board);
 				newGame = false;
@@ -86,7 +87,9 @@ public class TicTacToe {
 		System.out.println("Would you like to read the rules?");
 		String answer = sc.nextLine();
 		if (answer.equalsIgnoreCase("Y")) {
-			System.out.println("Test");
+			System.out.println("When a turn first starts it will show you the current game board.\n"
+					+ " Once you pick the row you'd like to make a move on you most type the"
+					+ " whole row the exact same what as it is shown," + " then you may make you change");
 		}
 	}
 

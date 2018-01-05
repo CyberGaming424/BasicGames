@@ -6,7 +6,6 @@ package mainPackage;
 
 import java.util.Scanner;
 
-import basicGames.TicTacToe;
 import basicGames.gameSelection;
 
 
@@ -15,8 +14,7 @@ public class MainProgram {
 	Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		TicTacToe tic = new TicTacToe();
-		//gameSelection game = new gameSelection();
+		gameSelection game = new gameSelection();
 
 	}
 
