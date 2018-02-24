@@ -73,7 +73,7 @@ public class TicTacToe {
 		newGame = true;
 		for (;;) {
 			moves();
-			board = "Please choose a row: \n" + "1. " + row1 + "\n" + "2. " + row2 + "\n" + "3. " + row3 + "\n";
+			board = "1. " + row1 + "\n" + "2. " + row2 + "\n" + "3. " + row3 + "\n";
 			System.out.println(board);
 			if (gameOver == true) {
 				board = "\n" + "1. " + row1 + "\n" + "2. " + row2 + "\n" + "3. " + row3 + "\n";
